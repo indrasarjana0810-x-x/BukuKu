@@ -1,16 +1,60 @@
-# React + Vite
+# BukuKu
+Repository untuk sistem manajemen buku dan transaksi penjualan. Backend API ini dibangun dengan ASP.NET Core dan Entity Framework Core untuk mengelola data master buku serta proses transaksi penjualan.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Fitur Utama
+Master Data
+Manajemen katalog buku (CRUD operations)
 
-Currently, two official plugins are available:
+Informasi lengkap buku: judul, penulis, genre, harga, stok, cover
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tracking stok buku otomatis
 
-## React Compiler
+Transaksi Penjualan
+Sistem penjualan dengan header-detail structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Composite key pada detail transaksi untuk optimalisasi
 
-## Expanding the ESLint configuration
+Kalkulasi subtotal dan total otomatis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Validasi stok sebelum transaksi
+
+# 🏗️ Arsitektur Database
+Entities:
+Buku - Master data buku dengan primary key Id_buku
+
+Penjualan - Header transaksi penjualan
+
+PenjualanDetail - Detail transaksi dengan composite key (PenjualanId, BukuId)
+
+Relationships:
+One-to-Many: Penjualan → PenjualanDetail
+
+Many-to-One: PenjualanDetail → Buku
+
+# 🛠️ Teknologi
+ASP.NET Core 6/7
+
+Entity Framework Core
+
+SQL Server
+
+REST API Architecture
+
+# 📋 API Endpoints
+text
+GET    /api/Buku           # Get all books
+GET    /api/Buku/{id}      # Get book by id
+POST   /api/Buku           # Create new book
+PUT    /api/Buku/{id}      # Update book
+DELETE /api/Buku/{id}      # Delete book
+
+GET    /api/Penjualan      # Get all sales
+POST   /api/Penjualan      # Create new sales transaction
+# 🎯 Use Cases
+Aplikasi toko buku online
+
+Sistem inventory perpustakaan
+
+Manajemen stok dan penjualan retailer buku
+
+Repository ini menyediakan foundation yang solid untuk pengembangan sistem manajemen buku dengan struktur database yang optimal dan scalable.
