@@ -1,7 +1,7 @@
-#BukuKu
+# BukuKu
 Repository untuk sistem manajemen buku dan transaksi penjualan. Backend API ini dibangun dengan ASP.NET Core dan Entity Framework Core untuk mengelola data master buku serta proses transaksi penjualan.
 
-#🚀 Fitur Utama
+# 🚀 Fitur Utama
 Master Data
 Manajemen katalog buku (CRUD operations)
 
@@ -18,7 +18,7 @@ Kalkulasi subtotal dan total otomatis
 
 Validasi stok sebelum transaksi
 
-#🏗️ Arsitektur Database
+# 🏗️ Arsitektur Database
 Entities:
 Buku - Master data buku dengan primary key Id_buku
 
@@ -31,7 +31,7 @@ One-to-Many: Penjualan → PenjualanDetail
 
 Many-to-One: PenjualanDetail → Buku
 
-#🛠️ Teknologi
+# 🛠️ Teknologi
 ASP.NET Core 6/7
 
 Entity Framework Core
@@ -40,7 +40,7 @@ SQL Server
 
 REST API Architecture
 
-#📋 API Endpoints
+# 📋 API Endpoints
 text
 GET    /api/Buku           # Get all books
 GET    /api/Buku/{id}      # Get book by id
@@ -50,7 +50,7 @@ DELETE /api/Buku/{id}      # Delete book
 
 GET    /api/Penjualan      # Get all sales
 POST   /api/Penjualan      # Create new sales transaction
-#🎯 Use Cases
+# 🎯 Use Cases
 Aplikasi toko buku online
 
 Sistem inventory perpustakaan
