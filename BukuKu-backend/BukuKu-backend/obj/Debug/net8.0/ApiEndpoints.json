@@ -1,0 +1,329 @@
+[
+  {
+    "ContainingType": "BukuKu_backend.Controllers.BukusController",
+    "Method": "GetBuku",
+    "RelativePath": "api/Bukus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BukuKu_backend.Model.Buku, BukuKu-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.BukusController",
+    "Method": "PostBuku",
+    "RelativePath": "api/Bukus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buku",
+        "Type": "BukuKu_backend.Model.Buku",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.Buku",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.BukusController",
+    "Method": "GetBuku",
+    "RelativePath": "api/Bukus/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.Buku",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.BukusController",
+    "Method": "PutBuku",
+    "RelativePath": "api/Bukus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "buku",
+        "Type": "BukuKu_backend.Model.Buku",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.BukusController",
+    "Method": "DeleteBuku",
+    "RelativePath": "api/Bukus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualanDetailsController",
+    "Method": "GetPenjualanDetail",
+    "RelativePath": "api/PenjualanDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BukuKu_backend.Model.PenjualanDetail, BukuKu-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualanDetailsController",
+    "Method": "PostPenjualanDetail",
+    "RelativePath": "api/PenjualanDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "penjualanDetail",
+        "Type": "BukuKu_backend.Model.PenjualanDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.PenjualanDetail",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualanDetailsController",
+    "Method": "GetPenjualanDetail",
+    "RelativePath": "api/PenjualanDetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.PenjualanDetail",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualanDetailsController",
+    "Method": "PutPenjualanDetail",
+    "RelativePath": "api/PenjualanDetails/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "penjualanDetail",
+        "Type": "BukuKu_backend.Model.PenjualanDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualanDetailsController",
+    "Method": "DeletePenjualanDetail",
+    "RelativePath": "api/PenjualanDetails/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualansController",
+    "Method": "GetPenjualan",
+    "RelativePath": "api/Penjualans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BukuKu_backend.Model.Penjualan, BukuKu-backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualansController",
+    "Method": "PostPenjualan",
+    "RelativePath": "api/Penjualans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "penjualan",
+        "Type": "BukuKu_backend.Model.Penjualan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.Penjualan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualansController",
+    "Method": "GetPenjualan",
+    "RelativePath": "api/Penjualans/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BukuKu_backend.Model.Penjualan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualansController",
+    "Method": "PutPenjualan",
+    "RelativePath": "api/Penjualans/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "penjualan",
+        "Type": "BukuKu_backend.Model.Penjualan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BukuKu_backend.Controllers.PenjualansController",
+    "Method": "DeletePenjualan",
+    "RelativePath": "api/Penjualans/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
